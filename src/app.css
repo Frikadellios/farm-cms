@@ -110,6 +110,51 @@
     filter: drop-shadow(0 0 3rem var(--color-neon-pink));
   }
 
+  .hero > img {
+        filter: drop-shadow(0 0 3rem var(--overlay-blurple));
+      }
+
+      .card {
+        border-radius: 12px;
+        position: relative;
+        background: radial-gradient(
+            300px circle at top left,
+            (var(--overlay-blurple), transparent 20%),
+            transparent 100%
+          ),
+          radial-gradient(
+            300px circle at bottom right,
+            (var(--overlay-blurple), transparent 65%),
+            transparent 100%
+          );
+      }
+
+      .card::before {
+        content: "";
+        position: absolute;
+        inset: 0px;
+        border-radius: inherit;
+        transition: opacity 400ms ease 0s;
+        will-change: background, opacity;
+        background: radial-gradient(
+          800px circle at var(--mouse-x) var(--mouse-y),
+          rgba(232, 121, 249, 0.15),
+          transparent 40%
+        );
+        opacity: 0;
+        z-index: 2;
+        pointer-events: none;
+      }
+
+      .card:hover::before {
+        opacity: 1;
+      }
+
+.hero > img {
+        animation: vert-move 3s ease-in-out infinite;
+        @apply rounded-full;
+      }
+
   body {
     transition: background-color 0.5s ease;
     position: relative;
@@ -149,32 +194,32 @@
   }
 
   h1 {
-    @apply scroll-m-20 text-4xl font-black tracking-tight lg:text-5xl;
-  }
+  @apply scroll-m-20 text-4xl font-black tracking-tight lg:text-5xl;
+}
 
-  h2 {
-    @apply mt-10 scroll-m-20 border-b pb-2 text-3xl font-black tracking-tight transition-colors first:mt-0;
-  }
+h2 {
+  @apply mt-10 scroll-m-20 border-b pb-2 text-3xl font-black tracking-tight transition-colors first:mt-0;
+}
 
-  h3 {
-    @apply mt-8 scroll-m-20 text-2xl font-semibold tracking-tight;
-  }
+h3 {
+  @apply mt-8 scroll-m-20 text-2xl font-semibold tracking-tight;
+}
 
-  h4 {
-    @apply scroll-m-20 text-xl font-semibold tracking-tight;
-  }
+h4 {
+  @apply scroll-m-20 text-xl font-semibold tracking-tight;
+}
 
-  large {
-    @apply text-lg font-bold tracking-tight transition-colors leading-7 [&:not(:first-child)]:mt-6;
-  }
+large {
+  @apply text-lg font-bold tracking-tight transition-colors leading-7 [&:not(:first-child)]:mt-6;
+}
 
-  p {
-    @apply text-sm font-bold leading-6 [&:not(:first-child)]:mt-6;
-  }
+p {
+  @apply text-sm font-bold leading-6 [&:not(:first-child)]:mt-6;
+}
 
-  :not(pre) > code {
-    @apply relative rounded border bg-background px-[0.3rem] py-[0.2rem] font-mono text-sm text-foreground;
-  }
+:not(pre) > code {
+  @apply relative rounded border bg-background px-[0.3rem] py-[0.2rem] font-mono text-sm text-foreground;
+}
 }
 
 .header {

@@ -10,10 +10,9 @@
     "bun",
     "typescript",
     "tailwindcss",
-    "astrojs",
+    "farm-fe",
     "cloudflare",
-    "react",
-    "framer-motion",
+    "vue",
     "shadcn"
   ],
   "author": {
@@ -21,16 +20,16 @@
     "name": "Hrihorii Ilin - @Frikadellios",
     "url": "https://github.com/Frikadellios"
   },
-  "license": "Apache-2.0",
+  "license": "MIT",
   "description": "I am from Ukraine :D",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Frikadellios/janes-school.git"
+    "url": "https://github.com/Frikadellios/farm-cms.git"
   },
   "bugs": {
-    "url": "https://github.com/Frikadellios/janes-school/issues"
+    "url": "https://github.com/Frikadellios/farm-cms/issues"
   },
-  "homepage": "https://github.com/Frikadellios/janes-school/readme",
+  "homepage": "https://github.com/Frikadellios/farm-cms/readme",
   "engines": {
     "node": ">=18.19.1 <19 || >=20.17.0 <21 || >=21.1.0"
   },
@@ -50,6 +49,7 @@
   },
   "dependencies": {
     "@farmfe/js-plugin-postcss": "^1.8.1",
+    "@selemondev/vue3-marquee": "^0.0.8",
     "@tailwindcss/cli": "^4.0.0-alpha.26",
     "@tailwindcss/postcss": "^4.0.0-alpha.26",
     "@vueuse/core": "^11.1.0",
@@ -58,6 +58,7 @@
     "clsx": "^2.1.1",
     "concurrently": "^9.0.1",
     "date-fns": "^4.1.0",
+    "embla-carousel-vue": "^8.3.0",
     "lucide-vue-next": "^0.451.0",
     "radix-vue": "^1.9.7",
     "sharp": "^0.33.5",

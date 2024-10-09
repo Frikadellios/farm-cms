@@ -43,7 +43,9 @@ import { ArrowRight } from "lucide-vue-next";
 
         <div class="space-y-4 md:space-y-0 md:space-x-4">
           <Button class="w-5/6 md:w-1/4 font-bold group/arrow">
-            Get Started
+             <a
+              href="https://github.com/Frikadellios/farm-cms.git"
+              target="_blank">Get Started</a>
             <ArrowRight
               class="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform"
             />
@@ -55,7 +57,7 @@ import { ArrowRight } from "lucide-vue-next";
             class="w-5/6 md:w-1/4 font-bold"
           >
             <a
-              href="https://github.com/leoMirandaa/shadcn-vue-landing-page.git"
+              href="https://github.com/Frikadellios/farm-cms.git"
               target="_blank"
               >Github respository</a
             >
@@ -72,7 +74,7 @@ import { ArrowRight } from "lucide-vue-next";
         <img
           class="w-full md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center border border-t-2 border-t-primary/30 img-border-animation"
           :src="
-            mode == 'light' ? 'hero-image-light.jpg' : 'hero-image-dark.jpg'
+            mode == 'light' ? 'demo-img.jpg' : 'demo-img.jpg'
           "
           alt="dashboard using shadcn-vue"
         />

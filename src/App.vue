@@ -1,12 +1,29 @@
 <script setup lang="ts">
   import Hero from '@/components/Hero.vue'
+  import Features from '@/components/Features.vue'
+  import HowItsWorks from '@/components/HowItsWorks.vue'
+  import Benefists from '@/components/Benefists.vue'
+  import Services from '@/components/Services.vue'
+  import Sponsors from '@/components/Sponsors.vue'
+  import Navbar from '@/components/Navbar.vue'
+  import Testimonials from '@/components/Testimonials.vue'
+  import Footer from '@/components/Footer.vue'
+  import Pricing from '@/components/Pricing.vue'
 </script>
 
 <template>
   <div class="page">
-  <Hero />
+    <Navbar />
+    <Hero />
+    <Sponsors />
+    <Features />
+    <Benefists />
+    <HowItsWorks />
+    <Services />
+    <Pricing />
+    <Testimonials />
+    <Footer />
   </div>
-
 </template>
 
 <style scoped>
