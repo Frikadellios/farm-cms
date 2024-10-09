@@ -9,6 +9,9 @@
   import Testimonials from '@/components/Testimonials.vue'
   import Footer from '@/components/Footer.vue'
   import Pricing from '@/components/Pricing.vue'
+  import Team from '@/components/Team.vue'
+  import Contact from '@/components/Contact.vue'
+  import FAQ from '@/components/FAQ.vue'
 </script>
 
 <template>
@@ -19,9 +22,12 @@
     <Features />
     <Benefists />
     <HowItsWorks />
+    <Team />
     <Services />
     <Pricing />
     <Testimonials />
+    <FAQ />
+    <Contact />
     <Footer />
   </div>
 </template>

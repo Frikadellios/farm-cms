@@ -21,7 +21,7 @@
   --color-emerald-green: oklch(69.59% 0.149 162.48);
   --color--overlay-blurple: oklch(91.3% 0.139 195.8);
   --overlay-plurple: oklch(59.17% 0.218 0.53 / 0.33);
-  --overlay-blurple: oklch(59.17% 0.218 0.53 / 10%);
+  --overlay-blurple: oklch(71.7% 0.25 360 / 10%);
   --color-green: oklch(0.5 0.207 156.57);
   --color-black: oklch(0% 0 0);
   --color-white: oklch(100% 0 0);
@@ -46,7 +46,7 @@
   --color-destructive-foreground: oklch(92.19% 0.003 348.18);
   --muted-foreground: oklch(71.19% 0.013 286.07);
 
-  --color-border: oklch(28.52% 0.046 352.26);
+  --color-border: oklch(71.7% 0.25 360);
 
   --color-input: oklch(28.52% 0.046 352.26);
   --color-ring: oklch(59.17% 0.218 0.53);
@@ -56,9 +56,12 @@
   --color-chart-4: oklch(61.92% 0.204 312.73);
   --color-chart-5: oklch(61.23% 0.209 6.39);
 
-  --border-radius-lg: 0.5rem;
-  --border-radius-md: calc(var(--border-radius-lg) - 0.5px);
-  --border-radius-sm: calc(var(--border-radius-md) - 0.5px);
+  --border-radius-xl: calc(var(--border-radius-lg) + 4px);
+  --border-radius-lg: 1rem;
+  --border-radius-md: calc(var(--border-radius-lg) - 2px);
+  --border-radius-sm: calc(var(--border-radius-md) - 2px);
+
+
   --ds-shadow-border: 0 0 0 1.5px oklch(100% 3.5594404384177905e-8 106.37411429114086 / 14.5%);
 
   --animate-border: border 4s linear infinite;
@@ -78,7 +81,9 @@
     font-family: system-ui, sans-serif;
     font-size: var(--font-size-base);
   }
-
+  * {
+    @apply border-border;
+  }
   img {
     content-visibility: auto;
   }
@@ -95,7 +100,7 @@
   }
 
   .border {
-    border-color: oklch(35.6% 0.174 312.18 / 25%);
+    border-color: oklch(71.7% 0.25 360);
   }
 
   .balance-text {
