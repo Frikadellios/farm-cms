@@ -1,0 +1,97 @@
+{
+  "name": "farm-cms",
+  "version": "1.0.0",
+  "packageManager": "bun@1.1.29",
+  "type": "module",
+  "private": true,
+  "keywords": [
+    "template",
+    "biomejs",
+    "bun",
+    "typescript",
+    "tailwindcss",
+    "astrojs",
+    "cloudflare",
+    "react",
+    "framer-motion",
+    "shadcn"
+  ],
+  "author": {
+    "email": "devopsick@pm.me",
+    "name": "Hrihorii Ilin - @Frikadellios",
+    "url": "https://github.com/Frikadellios"
+  },
+  "license": "Apache-2.0",
+  "description": "I am from Ukraine :D",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Frikadellios/janes-school.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Frikadellios/janes-school/issues"
+  },
+  "homepage": "https://github.com/Frikadellios/janes-school/readme",
+  "engines": {
+    "node": ">=18.19.1 <19 || >=20.17.0 <21 || >=21.1.0"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-checker -exclude \"**/node_modules/**\"",
+    "browserslist": "bunx update-browserslist-db@latest",
+    "tailwindcss": "bunx @tailwindcss/cli@next -i ./src/app.css -o ./src/index.css",
+    "lint": "conc bun:lint:*",
+    "lint:format": "bunx @biomejs/biome format . --write",
+    "lint:fix": "bunx @biomejs/biome check . --fix",
+    "lint:check": "bunx @biomejs/biome check ./* --write --unsafe",
+    "dev": "bun run tailwindcss -m && bunx --bun farm start",
+    "start": "bunx --bun farm start",
+    "build": "bunx --bun farm build",
+    "preview": "bunx --bun farm preview",
+    "clean": "farm clean"
+  },
+  "dependencies": {
+    "@farmfe/js-plugin-postcss": "^1.8.1",
+    "@tailwindcss/cli": "^4.0.0-alpha.26",
+    "@tailwindcss/postcss": "^4.0.0-alpha.26",
+    "@vueuse/core": "^11.1.0",
+    "caniuse-lite": "^1.0.30001667",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "concurrently": "^9.0.1",
+    "date-fns": "^4.1.0",
+    "lucide-vue-next": "^0.451.0",
+    "radix-vue": "^1.9.7",
+    "sharp": "^0.33.5",
+    "tailwind-merge": "^2.5.3",
+    "tailwindcss": "^4.0.0-alpha.26",
+    "tailwindcss-animate": "^1.0.7",
+    "tsx": "^4.19.1",
+    "vue": "^3.5.11",
+    "vue-tsc": "^2.1.6",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.3",
+    "@csstools/postcss-oklab-function": "^4.0.2",
+    "@farmfe/cli": "^1.0.4",
+    "@farmfe/core": "^1.3.25",
+    "@types/bun": "latest",
+    "@types/mdx": "^2.0.13",
+    "@types/node": "^22.7.5",
+    "@types/web": "^0.0.169",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "@vitejs/plugin-vue-jsx": "^4.0.1",
+    "autoprefixer": "^10.4.20",
+    "bun-devtools": "latest",
+    "bun-types": "latest",
+    "core-js": "^3.38.1",
+    "editorconfig-checker": "^6.0.0",
+    "postcss": "^8.4.47",
+    "postcss-discard-comments": "^7.0.3",
+    "postcss-preset-env": "^10.0.6",
+    "postcss-pxtorem": "^6.1.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.6.3"
+  },
+  "trustedDependencies": ["@biomejs/biome", "core-js", "esbuild", "sharp", "vue-demi", "workerd"]
+}
